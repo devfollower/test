@@ -1,0 +1,11 @@
+musi byc zaistalowany node
+1. w olmaps npm init
+2. w olmaps npm install express --save  //--save bo potrzebujemy jej cały czas
+3. create index.js
+4. index.js - get i listen serwera 
+5. node .\index.js // urucomienie serwera
+6. create config.js // ustawienia 
+7. $env:port = 3001; node .\index.js odpalanie na innym porcie \\zmienna srodowiskowa
+8.
+
+E:\Users\Ja\Documents\Myapps\olmaps> git init
