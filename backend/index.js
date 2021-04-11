@@ -4,9 +4,13 @@ const express = require('express');
 const app = express();
 const config = require('./config.js');
 
+//db
+require('./db/postgres.js');
+
 //ruting import z api.js
 const apiRauter = require('./ruting/api.js')
 app.use('/',apiRauter) // dołączaj ruting do głównej sciezki domeny
+
 
 //ruting przeniesiony do api.js
 // app.get('/', (req,res)=>{

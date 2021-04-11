@@ -9,3 +9,15 @@ musi byc zaistalowany node
 8.
 
 E:\Users\Ja\Documents\Myapps\olmaps> git init
+PS E:\Users\Ja\Documents\Myapps\olmaps> git add .
+
+PS E:\Users\Ja\Documents\Myapps\olmaps> git config --global user.email "robin34@wp.pl"
+  git config --global user.name "Robert"
+
+PS E:\Users\Ja\Documents\Myapps\olmaps> git commit -m "first commit"
+
+PS E:\Users\Ja\Documents\Myapps\olmaps> npm install --save pg
+create db folder
+create postgres.js file
+w index js -- require('./db/postgres.js');
+
