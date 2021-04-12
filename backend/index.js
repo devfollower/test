@@ -19,5 +19,5 @@ app.use('/',apiRauter) // dołączaj ruting do głównej sciezki domeny
 
 //serwer
 app.listen(config.port, ()=>{
-    console.log('serwer słucha'); // http://localhost:3000 //odeslij odpowiedz przeglądarki
+    console.log('serwer słucha'); // http://localhost:3000 //odeslij odpowiedz do consoli node
 });

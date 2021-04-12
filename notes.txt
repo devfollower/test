@@ -21,3 +21,4 @@ create db folder
 create postgres.js file
 w index js -- require('./db/postgres.js');
 
+zmiana nazwy brancha - git branch -M master

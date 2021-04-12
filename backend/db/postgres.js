@@ -1,10 +1,7 @@
 console.clear();
 const config = require('../config.js');
-const { Client,Pool } = require('pg');
+const { Client } = require('pg');
 
-let w = 2;
-
-//const connectionString = 'postgres://postgres:postgis@localhost:5432/postgis23';
 const client = new Client({
                             connectionString: config.connectionString
                          });
@@ -12,23 +9,35 @@ client.connect();
 console.log('------------1----------');
 let wynik;
 
-
+/*
 client.query('SELECT * FROM Employee where id = $1',[w], 
-
-//setTimeout(
-
         (err, res)=> {
                 wynik = res.rows[0]
                 console.log(res.rows[0]);
                // console.log('------------11----------');
                 client.end();
-                }
- //       ,500)
+                }      
+        );
+*/
+let w = 2;
+let q = 'SELECT * FROM Employee where id = $1';
 
-        
-        
-        
-        );//.then(()=>{console.log('odczyt');});
-//console.log('-----------kon-----------');
+client.query(q,[w], (err, res) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        for (let row of res.rows) {
+            console.log(row);
 
-console.log(wynik);
+      
+            
+        }
+        client.end();
+    });
+//console.log(row);
+module.exports = {
+                   homepage: (req,res)=>{
+                                          res.send('Serwer ');
+                                        }
+                 };
